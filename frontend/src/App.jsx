@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router';
 
 import { Header } from './components/Header';
 import { Home } from './components/Home';
+import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 
@@ -20,12 +21,14 @@ function App() {
                 element={
                   <>
                     <Home />
+                    <Skills />
                     <Projects />
                     <Contact />
                   </>
                 }
               />
               <Route path="/home" element={<Home />} />
+              <Route path="/skills" element={<Skills />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
