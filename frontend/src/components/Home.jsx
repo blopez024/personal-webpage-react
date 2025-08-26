@@ -6,28 +6,7 @@ const Home = () => {
     <div className="bio" id="home">
       <div className="bio-text">
         <h1>Bryan</h1>
-        <p>
-          25-year-old aspiring software developer from Los Angeles 🌴☀️
-          <br />
-          With a degree in Computer Science from UC Santa Cruz,
-          <br />
-          I&apos;m passionate about creating impactful and user-friendly
-          software.
-        </p>
-        <p>
-          After taking a career break in 2023, I&apos;m now ready to dive back
-          into <br />
-          the world of development. I&apos;m eager to bring fresh ideas and
-          dedication <br />
-          to new projects and continue growing as a developer.
-        </p>
-        <p>
-          I&apos;m skilled at solving complex problems through collaboration,
-          adapting to <br />
-          changing requirements, and clearly communicating technical solutions
-          to <br />
-          both technical and non-technical stakeholders.
-        </p>
+        <p>25-year-old aspiring Software Developer from Los Angeles 🌴☀️</p>
         <div className="bio-links">
           <ul>
             <li>

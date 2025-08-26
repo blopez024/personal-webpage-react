@@ -1,33 +1,33 @@
-import chemistry from '../assets/chemistry.svg';
+import dictionary from '../assets/dictionary.svg';
+import review from '../assets/review.svg';
+import budget from '../assets/budget.svg';
 import data from '../assets/data.svg';
-import email from '../assets/email.svg';
-import weather from '../assets/weather.svg';
 
 const Projects = () => {
   const projects = [
     {
-      icon: email,
-      title: 'b-mail',
+      icon: dictionary,
+      title: "b's dictionary",
       description:
-        'Developed an email system as a Single Page Application (SPA) using the NERP Stack, optimized for both mobile and desktop viewing.',
+        'A sleek, minimalist web app that helps users effortlessly expand their vocabulary with definitions, pronunciations, related images, and a random word generator.',
+    },
+    {
+      icon: review,
+      title: 'prisma book reviews',
+      description:
+        'Developed a full-stack book review web app with Express and Prisma ORM, featuring relational database modeling, and RESTful CRUD APIs.',
+    },
+    {
+      icon: budget,
+      title: 'pocket book',
+      description:
+        'Flutter mobile app for easy income and expense tracking, featuring a clean interface and secure, personalized finance management with Firebase integration. ',
     },
     {
       icon: data,
       title: 'predicting world happiness',
       description:
         "Developed a data science project for Ethics & Algorithms class, investigating the correlation between a country's economic indicators, life expectancy, and its overall happiness index.",
-    },
-    {
-      icon: chemistry,
-      title: 'irreducible representation calculator',
-      description:
-        'Collaborated with a team to develop a chemistry department-sponsored app to help inorganic chemistry students calculate a reducible form for a wide range of chemical point groups.',
-    },
-    {
-      icon: weather,
-      title: 'simple weather',
-      description:
-        'Built and designed a mobile app that displays weather information in a minimalist manner for a more reader-friendly experience.',
     },
   ];
 
