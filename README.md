@@ -1,9 +1,3 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
 # Personal Webpage (React)
 
 This is a personal portfolio website built with React and Vite. It showcases your profile, projects, and contact information in a modern, responsive design.
@@ -15,6 +9,9 @@ This is a personal portfolio website built with React and Vite. It showcases you
 - **Projects**: Display of your work and achievements
 - **Contact**: Email and other contact details
 - **Assets**: SVG icons, profile image, and resume PDF
+
+<img src="./previews/desktop-preview.png" alt="Desktop Webpage Preview" width="1000"/>
+<!-- <img src="./previews/mobile-preview.png" alt="Mobile Webpage Preview" width="300"/> -->
 
 ## Project Structure
 
