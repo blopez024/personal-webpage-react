@@ -1,7 +1,7 @@
-import dictionary from '../assets/dictionary.svg';
-import review from '../assets/review.svg';
-import budget from '../assets/budget.svg';
-import data from '../assets/data.svg';
+import dictionary from '../assets/project-icons/dictionary.svg';
+import review from '../assets/project-icons/review.svg';
+import budget from '../assets/project-icons/budget.svg';
+import data from '../assets/project-icons/data.svg';
 
 const Projects = () => {
   const projects = [

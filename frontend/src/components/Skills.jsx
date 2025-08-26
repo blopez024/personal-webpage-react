@@ -1,7 +1,7 @@
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Programming Languages',
+      title: 'programming languages',
       skills: [
         'JavaScript',
         'TypeScript',
@@ -14,18 +14,18 @@ const Skills = () => {
       ],
     },
     {
-      title: 'Frameworks',
+      title: 'frameworks',
       skills: ['React', 'Node.js', 'Express.js'],
     },
     {
-      title: 'Databases',
+      title: 'databases',
       skills: ['PostgreSQL', 'MySQL', 'SQLite', 'Prisma ORM', 'Sequelize ORM'],
     },
   ];
 
   return (
     <div className="skills" id="skills">
-      <h2>Skills</h2>
+      <h2 className="title-section">skills</h2>
       <div className="skills-container">
         {skillCategories.map((category) => (
           <div key={category.title} className="skill-category">
