@@ -1,7 +1,9 @@
 import { Link, useLocation } from 'react-router';
+import { useState } from 'react';
 
 const Header = () => {
   const location = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId) => {
     // If we're on the home page, scroll to section
@@ -23,27 +25,39 @@ const Header = () => {
     }
   };
 
+  const handleMenuClick = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleLinkClick = (e, sectionId) => {
+    handleNavClick(e, sectionId);
+    setIsMenuOpen(false);
+  };
+
   return (
     <header>
-      <nav>
+      <nav className={isMenuOpen ? 'mobile-menu-open' : ''}>
+        <button className="mobile-menu-button" onClick={handleMenuClick}>
+          <span className="menu-icon"></span>
+        </button>
         <ul>
           <li>
-            <a href="#home" onClick={(e) => handleNavClick(e, 'home')}>
+            <a href="#home" onClick={(e) => handleLinkClick(e, 'home')}>
               home
             </a>
           </li>
           <li>
-            <a href="#skills" onClick={(e) => handleNavClick(e, 'skills')}>
+            <a href="#skills" onClick={(e) => handleLinkClick(e, 'skills')}>
               skills
             </a>
           </li>
           <li>
-            <a href="#projects" onClick={(e) => handleNavClick(e, 'projects')}>
+            <a href="#projects" onClick={(e) => handleLinkClick(e, 'projects')}>
               projects
             </a>
           </li>
           <li>
-            <a href="#contact" onClick={(e) => handleNavClick(e, 'contact')}>
+            <a href="#contact" onClick={(e) => handleLinkClick(e, 'contact')}>
               contact
             </a>
           </li>
